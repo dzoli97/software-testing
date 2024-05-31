@@ -18,7 +18,6 @@ public abstract class AbstractStepDefs {
         WebDriverManager.chromedriver().setup();
         ChromeOptions options = new ChromeOptions();
         driver = new ChromeDriver(options);
-
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(WAIT_TIME));
     }
 
